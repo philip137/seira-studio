@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<title>Logwatch — 서버 로그 관측</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600&family=Source+Code+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#061b31;--body:#64748d;--purple:#533afd;--white:#fff;--border:#e5edf5;--dark:#1c1e54}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Source Sans 3','Noto Sans CJK KR',sans-serif;font-feature-settings:"ss01";background:var(--white);color:var(--body);width:1080px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 56px;font-size:14px;font-weight:400;color:var(--navy)}
+nav .w{font-weight:600;letter-spacing:-.2px}
+nav .r{display:flex;gap:22px;align-items:center}
+.purple{background:var(--purple);color:#fff;padding:8px 16px;border-radius:4px;font-size:14px}
+.hero{padding:72px 56px 64px;text-align:center}
+h1{font-size:56px;font-weight:300;line-height:1.03;letter-spacing:-1.4px;color:var(--navy);margin-bottom:20px}
+.sub{font-size:18px;font-weight:300;line-height:1.4;color:var(--body);max-width:620px;margin:0 auto 32px}
+.cta{display:inline-block;background:var(--purple);color:#fff;padding:8px 16px;border-radius:4px;font-size:16px;font-weight:400;margin-right:10px}
+.ghost{display:inline-block;background:transparent;color:var(--purple);padding:8px 16px;border-radius:4px;font-size:16px;border:1px solid #b9b9f9}
+.term{max-width:760px;margin:44px auto 0;background:#0d253d;border-radius:8px;padding:22px 26px;text-align:left;box-shadow:rgba(50,50,93,.25) 0 30px 45px -30px,rgba(0,0,0,.1) 0 18px 36px -18px}
+.term code{font-family:'Source Code Pro',monospace;font-size:12px;font-weight:500;line-height:2;color:#c3d1e0;display:block}
+.term .p{color:#8bb9ff}.term .g{color:#15be53}
+.sec{padding:64px 56px}
+h2{font-size:32px;font-weight:300;letter-spacing:-.64px;color:var(--navy);margin-bottom:32px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.c{background:#fff;border:1px solid var(--border);border-radius:6px;padding:26px;box-shadow:rgba(23,23,23,.08) 0 15px 35px}
+.c h3{font-size:22px;font-weight:300;letter-spacing:-.26px;color:var(--navy);margin-bottom:8px}
+.c p{font-size:16px;font-weight:300;line-height:1.4;color:var(--body)}
+.dark{background:var(--dark);padding:56px}
+.dark h2{color:#fff}
+.dark .row{display:flex;gap:48px}
+.dark .k{font-size:40px;font-weight:300;color:#fff;font-feature-settings:"tnum";letter-spacing:-.96px}
+.dark .k span{display:block;font-size:14px;font-weight:400;color:rgba(255,255,255,.65);letter-spacing:normal;margin-top:6px}
+footer{padding:32px 56px;font-size:12px;color:var(--body);border-top:1px solid var(--border)}
+</style></head><body>
+<nav><span class="w">Logwatch</span><span class="r"><span>제품</span><span>가격</span><span>문서</span><span class="purple">시작하기</span></span></nav>
+<div class="hero">
+  <h1>로그를 읽는 데<br>30초를 쓰세요</h1>
+  <p class="sub">수집·색인·알림까지 4줄의 설정으로. Elastic처럼 무겁지 않고, Papertrail처럼 비싸지 않습니다.</p>
+  <a class="cta">무료로 시작</a><a class="ghost">도큐먼트</a>
+  <div class="term"><code><span class="p">$</span> curl -sL logwatch.io/install.sh | sh</code><code><span class="g">✓</span> agent attached · project=prod-api · 1.2s</code><code><span class="p">→</span> streaming 4,182 events/min from 6 hosts</code></div>
+</div>
+<div class="sec">
+  <h2>왜 다시 로그 도구인가요</h2>
+  <div class="g3">
+    <div class="c"><h3>초당 과금 없음</h3><p>용량제 대신 고정 구독. 트래픽이 10배가 돼도 청구서가 그대로입니다.</p></div>
+    <div class="c"><h3>셀프 호스팅</h3><p>단일 바이너리. 데이터가 내 서버 밖으로 나가지 않습니다.</p></div>
+    <div class="c"><h3>알림이 참견함</h3><p>임계치가 아니라 패턴으로 알림. 노이즈는 주당 요약으로 묶어 보냅니다.</p></div>
+  </div>
+</div>
+<div class="dark">
+  <div class="row">
+    <div class="k">4,182<span>events/min 처리 (단일 노드)</span></div>
+    <div class="k">1.2s<span>에이전트 부착 시간</span></div>
+    <div class="k">1/6<span>Elastic 대비 운영 비용</span></div>
+    <div class="k">99.95%<span>최근 90일 가동률</span></div>
+  </div>
+</div>
+<footer>© 2026 Logwatch Inc. · 서울 · privacy@logwatch.io</footer>
+</body></html>

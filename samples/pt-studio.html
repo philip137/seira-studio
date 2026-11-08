@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<title>CORE — 피트니스 PT 스튜디오</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#08090a;--surface:#16171d;--text:#f7f8f7;--mut:rgba(235,235,245,.68);--acc:#5e6ad2;--line:rgba(255,255,255,.08)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter','Noto Sans CJK KR',sans-serif;background:var(--bg);color:var(--text);width:1200px;-webkit-font-smoothing:antialiased}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 64px;font-size:14px;font-weight:500}
+nav .l{display:flex;gap:28px;align-items:center}
+nav .lg{font-weight:700;letter-spacing:-.3px}
+nav .m{color:var(--mut)}
+.btn{background:var(--acc);color:#fff;padding:7px 14px;border-radius:6px;font-size:14px;font-weight:500}
+.hero{padding:96px 64px 80px;text-align:center;position:relative}
+.hero:before{content:"";position:absolute;inset:0 0 auto;height:520px;background:radial-gradient(60% 100% at 50% 0%,rgba(94,106,210,.22),transparent 70%)}
+.badge{position:relative;display:inline-block;background:rgba(94,106,210,.14);color:#a5adec;border:1px solid rgba(94,106,210,.3);font-size:12px;font-weight:500;padding:5px 11px;border-radius:9999px;margin-bottom:26px}
+h1{position:relative;font-size:68px;font-weight:600;line-height:1.05;letter-spacing:-2.4px;margin-bottom:22px}
+h1 em{font-style:normal;background:linear-gradient(96deg,#fff,#b3baf5);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{position:relative;font-size:18px;line-height:1.6;color:var(--mut);max-width:600px;margin:0 auto 36px}
+.sec{padding:64px;background:linear-gradient(180deg,rgba(255,255,255,.02),transparent)}
+.inner{max-width:1072px;margin:0 auto}
+h2{font-size:14px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--acc);margin-bottom:24px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.c{background:var(--surface);padding:28px}
+.c h3{font-size:17px;font-weight:600;letter-spacing:-.2px;margin-bottom:8px}
+.c p{font-size:14.5px;line-height:1.6;color:var(--mut)}
+.plan{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px}
+.p{border:1px solid var(--line);border-radius:12px;padding:26px;background:var(--surface)}
+.p.f{border-color:rgba(94,106,210,.5);background:linear-gradient(180deg,rgba(94,106,210,.1),var(--surface))}
+.p .n{font-size:13px;font-weight:600;color:var(--mut);letter-spacing:.04em;text-transform:uppercase}
+.p .v{font-size:32px;font-weight:600;letter-spacing:-1px;margin:10px 0 4px}
+.p .u{font-size:13px;color:var(--mut)}
+footer{padding:36px 64px;border-top:1px solid var(--line);font-size:13px;color:var(--mut);display:flex;justify-content:space-between}
+</style></head><body>
+<nav><div class="l"><span class="lg">CORE</span><span class="m">수업</span><span class="m">코치</span><span class="m">料金</span></div><span class="btn">체험 수업</span></nav>
+<div class="hero">
+  <span class="badge">성수동 · 1:1 전용 스튜디오</span>
+  <h1>몸은 기록으로<br><em>남아야 합니다</em></h1>
+  <p class="sub">매 세션 체형 촬영·체측정·운동 수행을 앱에 남깁니다. 12주 후 무엇을 달라졌는지 추측하지 마세요. 표로 보시면 됩니다.</p>
+  <span class="btn">첫 수업 30,000원</span>
+</div>
+<div class="sec"><div class="inner">
+  <h2>다릅니다</h2>
+  <div class="g3">
+    <div class="c"><h3>측정</h3><p>12개 지점 체측정 + 3각도 촬영. 세션마다 자동 기록.</p></div>
+    <div class="c"><h3>프로그래밍</h3><p>강습이 아니라 4주 단위 프로그램. 부하·회수·휴식이 정해져 있습니다.</p></div>
+    <div class="c"><h3>영양</h3><p>주 1회 사진 기반 식사 피드백. 식단표를 강요하지 않습니다.</p></div>
+  </div>
+</div></div>
+<div class="sec"><div class="inner">
+  <h2>이용권</h2>
+  <div class="plan">
+    <div class="p"><div class="n">Starter</div><div class="v">320,000</div><div class="u">주 1회 · 4주</div></div>
+    <div class="p f"><div class="n">Standard</div><div class="v">590,000</div><div class="u">주 2회 · 4주 · 영양 포함</div></div>
+    <div class="p"><div class="n">12주 프로그램</div><div class="v">1,680,000</div><div class="u">주 2회 · 12주 · 전 과정 기록</div></div>
+  </div>
+</div></div>
+<footer><span>CORE Fitness Studio · 서울 성동구 성수이로 00</span><span>02-000-0000</span></footer>
+</body></html>
